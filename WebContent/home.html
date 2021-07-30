@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home html</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+	<div class="container">
+	  <h2>Cadastro de alunos</h2>
+	  <form action="confirmacao.html" method="get">
+	  	<div class="form-group">
+	      <label>Nome:</label>
+	      <input type="text" class="form-control" placeholder="Digite o nome aqui" name="nome">
+	    </div>
+	  
+	    <div class="form-group">
+	      <label>Email:</label>
+	      <input type="email" class="form-control" placeholder="Digite o e-mail aqui" name="email">
+	    </div>
+	    
+	    <div class="form-group">
+		    <label>Curso:</label>
+		    <div class="radio">		    	
+	  			<label class="radio-inline"><input type="radio" name="curso" type="radio" value="G" checked>Graduação</label>
+	  			<label class="radio-inline"><input type="radio" name="curso" type="radio" value="E">Especialização</label>
+	  			<label class="radio-inline"><input type="radio" name="curso" type="radio" value="M">Mestrado</label>
+	  			<label class="radio-inline"><input type="radio" name="curso" type="radio" value="D">Doutorado</label>	  			
+			</div>
+		</div>
+		
+		<div class="form-group">
+	      <label for="sel1">Região:</label>
+		  	<select class="form-control" id="sel1">
+		       	<option value="N">Norte</option>
+				<option value="NE">Nordeste</option>
+				<option value="S">Sul</option>
+				<option value="SE">Sudeste</option>
+				<option value="CO">Centro-Oeste</option>
+		 	</select>
+		</div> 
+		
+		 <div class="form-group">
+		    <label>Disciplinas:</label>
+			<div class="checkbox">
+	      		<label class="checkbox-inline"><input type="checkbox" name="disciplinas" value="java" checked> Java</label>
+	      		<label class="checkbox-inline"><input type="checkbox" name="disciplinas" value="python" checked> Python</label>
+	      		<label class="checkbox-inline"><input type="checkbox" name="disciplinas" value="javascript"> JavaScript</label>
+	    	</div> 
+    	</div> 
+	    	   
+	    <button type="submit" class="btn btn-default">Cadastrar</button>
+	  </form>
+	</div>	
+</body>
+</html>
